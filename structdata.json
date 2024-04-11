@@ -1,0 +1,153 @@
+// Structdata Product
+// <script type="application/ld+json">
+
+//     </script>
+
+{
+  "@context" : "https://schema.org",
+  "@type" : "Organization",
+  "name" : "",
+  "url" : "http://localhost/masterpdo1/",
+  "sameAs" :
+  [
+    "https://www.google.com/",
+    "https://www.google.com/",
+    "https://www.google.com/",
+    "https://www.google.com/"
+  ],
+  "address":
+  {
+    "@type": "PostalAddress",
+    "streetAddress": "Tên đường",
+    "addressRegion": "Địa chỉ công ty",
+    "postalCode": "Mã bưu chính",
+    "addressCountry": "vi"
+  }
+},
+
+// Structdata Product Static
+{
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage":
+  {
+    "@type": "WebPage",
+    "@id": "https://google.com/article"
+  },
+  "headline": "<?=@$static['name'.$lang]?>",
+  "image":
+  [
+    "<?=$configBase.UPLOAD_NEWS_L.@$static['photo']?>"
+  ],
+  "datePublished": "<?=date('Y-m-d',@$static['date_created'])?>",
+  "dateModified": "<?=date('Y-m-d',@$static['date_updated'])?>",
+  "author":
+  {
+    "@type": "Person",
+    "name": "<?=@$setting['name'.$lang]?>"
+  },
+  "publisher":
+  {
+    "@type": "Organization",
+    "name": "Google",
+    "logo":
+    {
+      "@type": "ImageObject",
+      "url": "<?=$configBase.UPLOAD_PHOTO_L.@$logo['photo']?>"
+    }
+  },
+  "description": "<?=$seo->get('description')?>"
+}
+
+
+// Structdata Product Detail
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "Giày Slip On Ultraboost 21",
+  "image": ["upload/product/poduct-1-1758-7675.jpeg"],
+  "description": "Vội ra đường mà không có nhiều thời gian? Hãy xỏ chân vào đôi giày slip-on adidas Superstar này và dễ dàng tạo phong cách thanh lịch vào phút chót.  Thiết kế kh",
+  "sku": "SP02",
+  "mpn": "SOUL-21",
+  "brand": {
+    "@type": "Brand",
+    "name": "Giày nam"
+  },
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5",
+      "bestRating": "5"
+    },
+    "author": {
+      "@type": "Person",
+      "name": ""
+    }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.4",
+    "reviewCount": "89"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "giay-slip-on-ultraboost-21",
+    "priceCurrency": "VND",
+    "priceValidUntil": "2099-11-20",
+    "price": "450000",
+    "itemCondition": "https://schema.org/UsedCondition",
+    "availability": "https://schema.org/InStock"
+  }
+}
+
+// Structdata News
+{
+  "@context" : "https://schema.org",
+  "@type" : "Organization",
+  "name" : "",
+  "url" : "http://localhost/masterpdo1/",
+  "sameAs" :
+  [
+    "https://www.google.com/",
+    "https://www.google.com/",
+    "https://www.google.com/",
+    "https://www.google.com/"
+  ],
+  "address":
+  {
+    "@type": "PostalAddress",
+    "streetAddress": "",
+    "addressRegion": "HO CHI MINH",
+    "postalCode": "70000",
+    "addressCountry": "vi"
+  }
+}
+
+// Structdata News Detail
+
+{
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "nike-zoom-cong-nghe-dem-giay-thanh-cong-nhat-cua-nike"
+  },
+  "headline": "Nike Zoom công nghệ đệm giày thành công nhất của Nike",
+  "image": "upload/news/news-1-4178-8729.jpeg",
+  "datePublished": "2020-12-30T07:14:39+07:00",
+  "dateModified": "2024-03-18T22:10:22+07:00",
+  "author": {
+    "@type": "Person",
+    "name": "",
+    "url": ""
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "upload/photo/logo-8180-7565.jpg"
+    }
+  }
+}
