@@ -18,6 +18,8 @@ php artisan route:clear
 ```htaccess
 <IfModule mod_rewrite.c>
     RewriteEngine On
+    Options -Indexes
+    DirectoryIndex index.php
     RewriteCond %{HTTPS} on
     RewriteRule (.*) http://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
     <IfModule mod_negotiation.c>
@@ -47,6 +49,8 @@ php artisan route:clear
 ```htaccess
 <IfModule mod_rewrite.c>
     RewriteEngine On
+    Options -Indexes
+    DirectoryIndex index.php
     RewriteCond %{HTTPS} off
     RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
     <IfModule mod_negotiation.c>
